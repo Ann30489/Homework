@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(/images/green-field.jpg) no-repeat top center;
+  background: url(./images/green-field.jpg) no-repeat top center;
   background-size: 100%;
   background-size: cover;
 }
