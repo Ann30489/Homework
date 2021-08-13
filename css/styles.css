@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Aladin&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(/images/green-field.jpg) no-repeat top center;
+  background-size: 100%;
+  background-size: cover;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -8;
+  background: var(--color-gray);
+  background-image: linear-gradient(
+      200deg,
+      rgba(180, 240, 196, 0.808),
+      rgba(100, 200, 600, 0.1)
+    ),
+    url(/images/green-field.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50pt;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: "Aladin", cursive;
+  opacity: 0.8;
+}
+
+.navbar {
+  height: 100%;
+  position: fixed;
+  align-content: center;
+  margin-left: 580px;
+}
+
+.navbar ul li {
+  margin-top: 20px;
+  font-size: 25pt;
+}

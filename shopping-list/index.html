@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <title>Shopping List</title>
+
+    <!-- CSS -->
+    <style>
+      body {
+        background-color: #b0d648;
+        margin-left: 20pt;
+        margin-top: 0;
+      }
+
+      #main-title {
+        font-size: 30pt;
+      }
+
+      input[type="checkbox"]:checked ~ .item-title {
+        text-decoration: line-through;
+      }
+
+      .item-title {
+        font-size: 16pt;
+        font-style: italic;
+      }
+
+      #video-style {
+        float: right;
+      }
+    </style>
+    <!-- End of CSS -->
+  </head>
+
+  <body>
+    <!-- Video -->
+    <video
+      id="video-style"
+      width="590"
+      height="380"
+      controls
+      poster="./mountains.jpg"
+    >
+      <source
+        src="./video.mp4"
+        type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+      />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Title -->
+    <span id="main-title">What I Need to Buy</span>
+    <br>
+    <br>
+
+    <!-- Audio -->
+    <audio controls>
+      <source type="audio/mp3" src="./audio.mp3" />
+      <source type="audio/mpeg" src="" />
+    </audio>
+
+    <!-- My List -->
+    <ol>
+      <!-- Bread -->
+      <li>
+        <label>
+          <input type="checkbox" name="checkbox" />
+          <span class="item-title">Bread</span>
+        </label>
+      </li>
+      <br />
+
+      <!-- Milk -->
+      <li>
+        <label>
+          <input type="checkbox" name="checkbox" />
+          <span class="item-title">Milk</span>
+        </label>
+      </li>
+      <br />
+
+      <!-- Cheese -->
+      <li>
+        <label>
+          <input type="checkbox" name="checkbox" />
+          <span class="item-title">Cheese</span>
+        </label>
+      </li>
+      <br />
+
+      <!-- Potatoes -->
+      <li>
+        <label>
+          <input type="checkbox" name="checkbox" />
+          <span class="item-title">Potatoes</span>
+        </label>
+      </li>
+      <br />
+
+      <!-- Apples -->
+      <li>
+        <label>
+          <input type="checkbox" name="checkbox" />
+          <span class="item-title">Apples</span>
+        </label>
+      </li>
+      <br />
+
+      <!-- Cookies -->
+      <li>
+        <label>
+          <input type="checkbox" name="checkbox" />
+          <span class="item-title">Cookies</span>
+        </label>
+      </li>
+      <br />
+
+      <!-- Greens -->
+      <li>
+        <label>
+          <input type="checkbox" name="checkbox" />
+          <span class="item-title">Greens</span>
+        </label>
+      </li>
+      <br />
+
+      <!-- Onion -->
+      <li>
+        <label>
+          <input type="checkbox" name="checkbox" />
+          <span class="item-title">Onion</span>
+        </label>
+      </li>
+      <br />
+
+      <!-- Sour Cream -->
+      <li>
+        <label>
+          <input type="checkbox" name="checkbox" />
+          <span class="item-title">Sour Cream</span>
+        </label>
+      </li>
+      <br />
+
+      <!-- Eggs -->
+      <li>
+        <label>
+          <input type="checkbox" name="checkbox" />
+          <span class="item-title">Eggs</span>
+        </label>
+      </li>
+    </ol>
+  </body>
+</html>

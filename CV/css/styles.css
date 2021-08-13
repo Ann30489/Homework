@@ -1,0 +1,43 @@
+body {
+  background-color: #fadadd;
+  margin: 16px;
+  margin-left: 1%;
+  margin-top: 0%;
+}
+.rightpic {
+  float: left;
+  position: top;
+  image-orientation: inherit;
+  margin: auto;
+  border-radius: 50%;
+}
+header {
+  display: flex;
+  margin-left: 0%;
+  margin-top: 0%;
+}
+#lang {
+  background-color: #d8bfd8;
+  color: black;
+  font-size: 11pt;
+}
+.header_content {
+  display: inline-flexbox;
+}
+h1 {
+  font-size: 40pt;
+  float: left;
+  margin-top: 0%;
+  margin-bottom: 5%;
+}
+#main {
+  font-size: 15pt;
+}
+#personal_content {
+  font-size: 14pt;
+}
+.title {
+  background-color: lightgrey;
+  margin-top: 0%;
+  font-size: 20pt;
+}
