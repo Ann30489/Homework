@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(https://images.app.goo.gl/mnLKYBxdaU4LFjqD7) no-repeat top center;
+  background-image: url(https://mcdn.wallpapersafari.com/medium/85/34/4KsHpc.jpg) no-repeat top center;
   background-size: 100%;
   background-size: cover;
 }
@@ -22,7 +22,7 @@ body::before {
       rgba(180, 240, 196, 0.808),
       rgba(100, 200, 600, 0.1)
     ),
-    url(https://images.app.goo.gl/mnLKYBxdaU4LFjqD7);
+    url(https://mcdn.wallpapersafari.com/medium/85/34/4KsHpc.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
