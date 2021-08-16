@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #990909;
+}
+
+.outer-wrapper {
+  margin-left: 10px;
+}
+
+/* Header decoration */
+header {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+/* Website logo */
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Navbar decoration */
+.navbar {
+  background-color: black;
+  height: 250px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Links */
+a {
+  color: white;
+}
+
+/* Block with images */
+.menu-title {
+  color: white;
+  font-size: 20px;
+}
+
+/* Images */
+.item {
+  text-align: center;
+  margin-bottom: 0px;
+  padding-top: 30px;
+}
+
+/* Container for the main part */
+.main-container {
+  box-sizing: border-box;
+  justify-content: space-evenly;
+  margin-top: 5px;
+  align-content: space-between;
+}
+
+/* Container for the orange text */
+.underline-content {
+  display: inline-block;
+  background: #7d0909;
+  color: #e25b11;
+  font-size: 18px;
+  text-decoration: underline #e25b11;
+  height: 335px;
+  width: 15%;
+  vertical-align: top;
+}
+
+/* Container for the article */
+.text-wrap {
+  display: inline-block;
+  height: auto;
+  width: 65%;
+  vertical-align: top;
+  padding-right: 55px;
+}
+
+/* Gray container */
+.title-wrap {
+  display: inline-block;
+  background: #e3dddd;
+  font-size: 18px;
+  height: auto;
+  width: 15%;
+  padding: 0;
+  vertical-align: top;
+}
+
+/* Gray container decoration */
+.text-wrap p {
+  color: white;
+  font-size: 18px;
+}
+
+/* Title decoration */
+.title-wrap p:first-child {
+  background: #bdbdbd;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Lines in the gray container */
+hr {
+  margin-left: 55px;
+  margin-right: 55px;
+}
+
+/* Footer decoration */
+footer {
+  color: white;
+  background: #e95b11;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 20px;
+}
