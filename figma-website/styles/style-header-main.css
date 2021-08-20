@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pavanam&display=swap");
+
+/* Header */
+.header {
+  position: absolute;
+  width: 592px;
+  height: 59px;
+  left: 150px;
+  top: 40px;
+}
+
+.header > img {
+  width: 140px;
+  height: 60px;
+}
+
+/* Logo style */
+.logo {
+  width: 850px;
+}
+
+.logo-text {
+  color: #ffffff;
+  font-family: "Paytone One", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 35px;
+  position: absolute;
+  width: 115px;
+  height: 47px;
+  left: 16px;
+  top: 10px;
+}
+
+/* Header navigation */
+.navbar {
+  position: absolute;
+  width: 600px;
+  height: 25px;
+  left: 210px;
+  top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar > a {
+  font-family: "Paytone One", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar > a:hover {
+  color: #78a18e;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Main content */
+.main-container {
+  position: absolute;
+  width: 985px;
+  height: 1700px;
+  left: 290px;
+  top: 210px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(50, 42, 39, 0) 0%,
+    rgba(45, 40, 40, 0.85) 33.85%,
+    #2d2828 49.48%,
+    #2d2828 68.75%,
+    #2d2828 82.29%,
+    #2d2828 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  box-shadow: -15px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.main-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 485px;
+  width: 1000px;
+}
+
+.content {
+  margin-left: 65px;
+  margin-top: 80px;
+}
+
+.content > h1 {
+  font-family: "Paytone One", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 89px;
+  color: #ffffff;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.content > h2 {
+  font-family: "Paytone One", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+  top: -45px;
+}
+
+/* Article */
+.article {
+  margin-top: 45px;
+  height: 120px;
+  width: 430px;
+}
+.content > article > p {
+  font-family: "Segoe UI", sans-serif;
+  src: url(../fonts/Segoe\ UI.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+/* Coffee cup image */
+.coffee-img {
+  padding-top: 203px;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+/* Request field */
+.request {
+  width: 455px;
+  margin-top: 45px;
+}
+
+#email {
+  width: 291px;
+  height: 36px;
+  background: transparent;
+  border-color: #888481;
+  border-radius: 10px;
+  border-width: 2px;
+  color: white;
+  text-indent: 10px;
+}
+
+.email :focus {
+  outline: none;
+  border-color: gray;
+}
+
+::placeholder {
+  text-indent: 35px;
+}
+
+.request-btn {
+  width: 123px;
+  height: 36px;
+  margin-left: 25px;
+  background: transparent;
+  border-radius: 10px;
+  border-color: #e03232;
+  color: #7f7b78;
+  font-family: "Pavanam", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Social logos */
+.social-wrapper {
+  width: 990px;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid #5c5754;
+  margin-top: 20px;
+}
+
+.social {
+  margin: 0;
+  padding: 0;
+}
+
+.large-img {
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 55px;
+}
+
+/* Word marketing */
+.marketing {
+  position: absolute;
+  top: 1000px;
+  left: 90px;
+  width: 800px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.market-text {
+  font-family: "Paytone One", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+/* Dotted line image */
+.line {
+  height: min-content;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 3px;
+}
+
+/* Thread icon */
+.yellow-btn {
+  width: 140px;
+  height: 25px;
+  text-align: center;
+}
+
+.thread-text {
+  position: absolute;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  align-self: center;
+  margin-top: -25px;
+  margin-left: -35px;
+}
+
+/* Blog field */
+.ntf {
+  display: flex;
+  flex-direction: column;
+  top: 1280px;
+  left: 200px;
+  margin-top: 580px;
+  margin-left: 70px;
+  width: 450px;
+  float: left;
+}
+
+.item-com {
+  width: 450px;
+  height: 185px;
+}
+
+.info {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 150%;
+  color: #ffffff;
+  opacity: 0.7;
+  width: 315px;
+  margin-left: 70px;
+  margin-top: 600px;
+  float: left;
+}
+
+.info-title {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.info-content {
+  font-weight: normal;
+  font-size: 12px;
+  font-style: normal;
+}
+
+/* Brands info */
+.brands {
+  position: absolute;
+  margin-top: 1950px;
+  width: 920px;
+  margin-left: 350px;
+}
+
+.brand-photo {
+  margin-top: 2100px;
+  margin-left: 365px;
+}
+
+.brand-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 950px;
+  height: 400px;
+  margin-top: 10px;
+  margin-left: 330px;
+}
+
+.brand-info-wrap {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 27px;
+  color: #000000;
+  font-weight: 600;
+  font-size: 18px;
+}
+.brand-info-wrap > p {
+  width: 265px;
+}

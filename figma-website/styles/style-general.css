@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pavanam&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Background image */
+.bg-pic {
+  background: url(../images/bg-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 1478px;
+  height: 2600px;
+  left: -100px;
+  top: -5px;
+}
+
+/* Footer background */
+.footer-bg {
+  background: url(../images/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 1400px;
+  height: 560px;
+  left: 75px;
+  bottom: 50px;
+  top: 2450px;
+}
+
+/* Red circle above footer */
+.red-circle {
+  position: absolute;
+  width: 117px;
+  height: 117px;
+  border-radius: 50%;
+  background: #ff1640;
+  margin-left: 667px;
+  margin-top: 25px;
+}
+
+.alpine {
+  position: absolute;
+  width: 164px;
+  height: 63px;
+  top: 150px;
+  left: 65px;
+  font-family: Paytone One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 63px;
+  color: #ffffff;
+}
+
+/* Navigation footer */
+.site-nav {
+  display: flex;
+  flex-direction: row;
+  margin-top: 165px;
+  margin-left: 380px;
+  width: 300;
+  height: 120px;
+  padding: 0 20px;
+}
+
+.site-nav a {
+  text-decoration: none;
+}
+
+.site-nav span {
+  font-family: "Segoe UI", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.nav-sec {
+  padding-left: 70px;
+}
+
+.nav-thd {
+  padding-left: 70px;
+}
+
+/* Social bar */
+.aside {
+  margin-left: 890px;
+  margin-top: -115px;
+  text-align: right;
+  margin-right: 60px;
+}
+
+.social-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 200px;
+  margin-left: 275px;
+}
+
+/* Copyright and Policy Text */
+.copyright {
+  font-family: "Segoe UI", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+}
