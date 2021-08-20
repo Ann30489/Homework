@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: url(../fonts/proxima-nova-regular.ttf),
+    url(../fonts/proxima-nova-light.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/* Navigation */
+.nav {
+  padding-top: 10px;
+  background: #1275b9;
+  padding-bottom: 5px;
+}
+
+.nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.wrapper {
+  position: absolute;
+  width: 1100px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 160px;
+  margin-left: 125px;
+}
+
+/* Blocks style */
+.info-block {
+  width: 250px;
+  height: 190px;
+  text-align: center;
+}
+
+/* Icons style */
+.icon {
+  width: 70px;
+  height: 70px;
+  padding-left: 85px;
+}
+
+/* Icon background */
+.circle {
+  width: 70px;
+  height: 70px;
+  background-color: #1275b9;
+  border: 1px solid #1275b9;
+  border-radius: 50%;
+}
+
+/* Icons hover */
+.icon :hover {
+  background-color: #2a69a6;
+  border: 1px solid white;
+}
+
+.circle > img {
+  padding-top: 20px;
+}
+
+.circle > img:hover {
+  background: transparent;
+  border: none;
+}
+
+/* First icon */
+#white-bg {
+  background-color: #ffffff;
+}
+
+#white-bg:hover {
+  background-color: #2a69a6;
+  border: 1px solid white;
+}
+
+/* Titles */
+.title {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  font-size: 18px;
+}
+
+/* Texts blocks */
+.text {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 100px;
+  color: #9d9d9d;
+}
