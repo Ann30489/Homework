@@ -1,0 +1,166 @@
+/* Fonts */
+@font-face {
+  font-family: "Lucida Grande";
+  src: url("../fonts/LucidaGrande.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lucida Sans Unicode";
+  src: url("../fonts/LucidaSansUnicode.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #3399cc;
+  border: 15px solid #2b81ac;
+}
+
+.outer-wrapper {
+  color: white;
+  padding: 50px 250px;
+}
+
+/* Header */
+.header {
+  margin-bottom: 30px;
+}
+
+/* Title */
+h1 {
+  margin: 0;
+  font-size: 20px;
+  font-family: "Lucida Grande", sans-serif;
+}
+
+/* Navigation */
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  background-color: violet;
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 16px;
+  border-top-right-radius: 25%;
+  border-top-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+  border-bottom-left-radius: 25%;
+  padding: 5px;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+  color: black;
+}
+
+/* List of cities */
+.city-list {
+  list-style: none;
+  font-family: sans-serif;
+  padding: 2px;
+  text-align: center;
+  background: white;
+  font-size: 0;
+  width: auto;
+  margin-bottom: 25px;
+}
+
+.city-list li {
+  display: inline-block;
+  font-size: 20px;
+  border: 2px solid white;
+  vertical-align: top;
+  padding: 25px 0;
+  font-family: "Lucida Sans Unicode", sans-serif;
+  word-wrap: break-word;
+}
+
+/* Hover effect */
+.city-list li:hover {
+  opacity: 0.6;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Icons styling */
+.wi {
+  color: white;
+  font-size: 25px;
+}
+
+ul > li > p {
+  margin-top: 10px;
+  opacity: 0.6;
+}
+
+/* Texts in color blocks */
+.lis {
+  background: #3399cc;
+  width: 50%;
+}
+
+.paris {
+  background: #33cccc;
+  width: 25%;
+}
+
+.belg {
+  background: #996699;
+  width: 25%;
+}
+
+.mosc {
+  background: #c24747;
+  width: 25%;
+}
+
+.tel {
+  background: #e2674a;
+  width: 25%;
+}
+
+.cair {
+  background: #ffcc66;
+  width: 25%;
+}
+
+.york {
+  background: #99cc99;
+  width: 25%;
+}
+
+.delhi {
+  background: #669999;
+  width: 25%;
+}
+
+.franc {
+  background: #cc6699;
+  width: 50%;
+}
+
+.tokyo {
+  background: #339966;
+  width: 25%;
+}
+
+.syd {
+  background: #666699;
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  font-family: Lucida Grande, sans-serif;
+  font-size: 14px;
+}

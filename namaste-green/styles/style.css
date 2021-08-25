@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+}
+
+.wrapper {
+  margin: 0 100px;
+  margin-top: 85px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+}
+
+/* Main title */
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  color: #0ec8cb;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+/* Smaller title */
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 0.7;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+/* Info */
+.info {
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.4;
+  padding: 0 260px;
+  letter-spacing: 1px;
+  margin-bottom: 100px;
+}
+
+/* Container for main blocks */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0;
+  border: 2px solid #efefef;
+  margin-bottom: 35px;
+}
+
+/* Main blocks */
+.info-block {
+  display: inline-block;
+  width: 25%;
+  background-color: #f7f7f7;
+  padding: 25px 60px;
+  padding-bottom: 80px;
+  border-right: 1px solid #efefef;
+}
+
+/* Main blocks hover */
+.info-block:hover {
+  color: white;
+  opacity: 1;
+  background-color: #0ec8cb;
+}
+
+.container :nth-child(4n) {
+  border-right: none;
+}
+
+/* Block title */
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+/* Text inside the blocks */
+.text {
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.6;
+  padding: 0 15px;
+}
+
+/* Icon styling */
+.svg {
+  width: 55px;
+  height: 60px;
+  fill: black;
+  margin-bottom: 40px;
+}
+
+#diamond {
+  margin-bottom: 22px;
+}
+
+.svg:hover {
+  fill: white;
+}
+
+/* Navigation */
+.navbar {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  background-color: #0ec8cb;
+  padding: 10px;
+  border-radius: 70%;
+}
