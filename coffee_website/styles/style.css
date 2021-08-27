@@ -1,0 +1,99 @@
+/* Fonts */
+@font-face {
+  font-family: "Miso";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/miso.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Miso Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/miso-bold.woff") format("woff");
+}
+
+body {
+  background-color: #fdde81;
+}
+
+/* Outer container */
+.my_container {
+  margin: 75px;
+}
+
+/* Flex container */
+.flex_cont {
+  width: 1140px;
+}
+
+/* Flex items */
+.flex_item {
+  background: white;
+  box-shadow: 2px #c9bd96;
+  text-align: center;
+  height: 450px;
+  width: 350px;
+  align-self: center;
+  border: 1px solid rgb(233, 228, 228);
+  border-radius: 1%;
+}
+
+/* Middle flex item */
+.gold_coffee {
+  height: 500px;
+}
+
+.gold_coffee p {
+  margin-bottom: 0;
+  padding-top: 20px;
+}
+
+#gold_img {
+  margin-top: 15px;
+}
+
+#gold_price {
+  padding-top: 30px;
+}
+
+/* Price */
+.price {
+  color: #02995b;
+  font-family: "Miso Bold", sans-serif;
+  font-size: 72px;
+}
+
+/* Image styling */
+.cup_image {
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+
+/* Titles under the cups */
+.title_cup {
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: -3px;
+}
+
+/* Discount text */
+.special_offer {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  opacity: 0.8;
+  padding: 0 90px;
+  padding-top: 15px;
+}
+
+.my_navbar a {
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.my_navbar a:hover {
+  cursor: pointer;
+  background-color: #02995b;
+}
