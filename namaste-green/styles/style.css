@@ -69,6 +69,7 @@ h3 {
   padding: 25px 60px;
   padding-bottom: 80px;
   border-right: 1px solid #efefef;
+  fill: black;
 }
 
 /* Main blocks hover */
@@ -76,6 +77,7 @@ h3 {
   color: white;
   opacity: 1;
   background-color: #0ec8cb;
+  fill: white;
 }
 
 .container :nth-child(4n) {
@@ -104,7 +106,6 @@ h3 {
 .svg {
   width: 55px;
   height: 60px;
-  fill: black;
   margin-bottom: 40px;
 }
 

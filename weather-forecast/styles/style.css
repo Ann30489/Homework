@@ -86,11 +86,20 @@ h1 {
   word-wrap: break-word;
 }
 
-/* Hover effect */
-.city-list li:hover {
+.city-list:hover li {
   opacity: 0.6;
   transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* Hover effect */
+
+.city-list li:hover{
+  opacity: 1;
+}
+
+/* .city-list:hover {
+  opacity: 0.6;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+} */
 
 /* Icons styling */
 .wi {

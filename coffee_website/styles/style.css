@@ -19,7 +19,7 @@ body {
 
 /* Outer container */
 .my_container {
-  margin: 75px;
+  margin: 75px auto;
 }
 
 /* Flex container */
