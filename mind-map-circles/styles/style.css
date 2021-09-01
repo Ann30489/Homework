@@ -1,0 +1,261 @@
+/* Red circles animation */
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(1.2, 1.2);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  80% {
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    transform: scale(0.6, 0.6);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #414453;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* Outer wrapper */
+.wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.header {
+  margin: 85px 0 0 125px;
+  width: fit-content;
+}
+
+/* Wrapper for main title */
+.title-wrapper {
+  color: #edf1fa;
+  font-size: 120px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  line-height: 135px;
+  letter-spacing: 0.04em;
+  margin-bottom: 40px;
+}
+
+/* Description under the main title */
+.small-title {
+  color: #edf1fa;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 3px;
+  letter-spacing: 0.04em;
+}
+
+/* Big top circle */
+.big-circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: -155px;
+  right: 112px;
+}
+
+/* Big red circle */
+.red-circle {
+  position: absolute;
+  background-color: #ff545b;
+  border-radius: 50%;
+  width: 310px;
+  height: 310px;
+}
+
+/* Top yellow circle */
+.yellow-circle {
+  background-color: #ffcf6d;
+  border-radius: 50%;
+  position: absolute;
+  width: 165px;
+  height: 165px;
+  top: 73px;
+  left: 72px;
+}
+
+/* Group of circles */
+
+.flower {
+  position: absolute;
+  top: 277px;
+  right: 85px;
+  z-index: 0;
+}
+
+/* Central yellow circle */
+.central-yellow-bubble {
+  position: relative;
+  background-color: #ffcf6d;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  z-index: 800;
+}
+
+/* Grey lines styling */
+.grey-line {
+  position: absolute;
+  background-color: #808390;
+  width: 360px;
+  height: 3px;
+  z-index: 0;
+}
+
+.line-x {
+  top: 98px;
+  left: -105px;
+}
+
+.line-y {
+  transform: rotate(90deg);
+  top: 95px;
+  left: -92px;
+}
+
+.line-z1 {
+  transform: rotate(45deg);
+  top: 86px;
+  left: -105px;
+}
+
+.line-z2 {
+  transform: rotate(-45deg);
+  top: 80px;
+  right: -106px;
+}
+
+/* Red circles */
+.petal {
+  position: absolute;
+  background-color: #ff545b;
+  border-radius: 50%;
+}
+
+.petal-12,
+.petal-6 {
+  width: 85px;
+  height: 85px;
+}
+
+.petal-1,
+.petal-5,
+.petal-8,
+.petal-11 {
+  width: 120px;
+  height: 120px;
+}
+
+.petal-3,
+.petal-9 {
+  width: 110px;
+  height: 110px;
+}
+
+.petal-12 {
+  top: -115px;
+  left: 48px;
+}
+
+.petal-1 {
+  top: -93px;
+  right: -109px;
+}
+
+.petal-3 {
+  top: 40px;
+  left: 225px;
+}
+
+.petal-5 {
+  top: 164px;
+  left: 160px;
+}
+
+.petal-6 {
+  bottom: -115px;
+  right: 45px;
+}
+
+.petal-8 {
+  top: 168px;
+  left: -100px;
+}
+
+.petal-9 {
+  top: 38px;
+  left: -165px;
+}
+
+.petal-11 {
+  top: -94px;
+  left: -102px;
+}
+
+.central-yellow-bubble:hover ~ .petal {
+  animation: scale 4s linear infinite;
+}
+
+.flower:hover {
+  animation: rotating 6s linear infinite;
+}
+
+/* Yellow top circle growing */
+.yellow-circle:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Navigation styling */
+.navbar {
+  margin-top: 30px;
+  padding-left: 125px;
+}
+
+/* Link styling */
+.navbar a {
+  color: #edf1fa;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+/* Link hover */
+.navbar a:hover {
+  color: #ff545b;
+  transform: scale(1.1, 1.1);
+}

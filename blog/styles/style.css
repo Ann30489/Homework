@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Bold.ttf") format("truetype"),
+    url("../fonts/Raleway-Heavy.ttf") format("truetype"),
+    url("../fonts/Raleway-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b07cf7;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #4c2882;
+  height: 65px;
+}
+
+/* Home navigation */
+.navbar {
+  padding: 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #cbdfe6;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  color: #f82b3c;
+}
+
+.main {
+  margin: 135px auto;
+  margin-bottom: 100px;
+}
+
+/* Main title */
+.main-title {
+  font-weight: bold;
+  font-size: 90px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+/* Images */
+.image {
+  width: 370px;
+  height: 315px;
+}
+
+/* Info under the title */
+.info {
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  padding: 0 369px;
+  margin-bottom: 45px;
+}
+
+.articles-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 45px;
+}
+
+/* Artciles */
+.article {
+  position: relative;
+}
+
+/* Block with text */
+.block-info {
+  position: absolute;
+  background: transparent;
+  width: 370px;
+  height: 315px;
+  bottom: 5px;
+  padding: 35px 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/* Date and month */
+.calendar {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.26);
+  border-radius: 10px;
+  width: 58px;
+  height: 60px;
+  text-align: center;
+  margin-left: 12px;
+  margin-bottom: 115px;
+}
+
+.date {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.month {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Titles in blocks */
+.article-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+/* Author's name */
+.author {
+  font-weight: 100;
+  font-size: 13px;
+}
+
+/* View more button */
+.button {
+  text-align: center;
+}
+
+.view-more {
+  font-weight: 100;
+  font-size: 20px;
+  background-color: #f82b3c;
+  padding: 15px 42px;
+}
+
+.view-more:hover {
+  transform: scale(0.92, 0.92);
+  cursor: pointer;
+  background-color: #e61829;
+  transition: 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
