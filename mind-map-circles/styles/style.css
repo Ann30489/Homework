@@ -10,6 +10,7 @@
 
 @keyframes scale {
   0% {
+    transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     transform: scale(1, 1);
   }
   30% {
@@ -18,11 +19,14 @@
   50% {
     transform: scale(1.1, 1.1);
   }
+  65% {
+    transform: scale(0.6, 0.6);
+  }
   80% {
     transform: scale(0.9, 0.9);
   }
   100% {
-    transform: scale(0.6, 0.6);
+    transform: scale(1, 1);
   }
 }
 
@@ -51,8 +55,10 @@ body {
 }
 
 .header {
+  position: relative;
   margin: 85px 0 0 125px;
   width: fit-content;
+  z-index: 10;
 }
 
 /* Wrapper for main title */
@@ -105,6 +111,7 @@ body {
   height: 165px;
   top: 73px;
   left: 72px;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Group of circles */
@@ -226,7 +233,8 @@ body {
 }
 
 .central-yellow-bubble:hover ~ .petal {
-  animation: scale 4s linear infinite;
+  animation: scale 3s linear infinite;
+  
 }
 
 .flower:hover {
