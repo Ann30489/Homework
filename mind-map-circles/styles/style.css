@@ -249,8 +249,10 @@ body {
 
 /* Navigation styling */
 .navbar {
+  position: relative;
   margin-top: 30px;
   padding-left: 125px;
+  z-index: 10;
 }
 
 /* Link styling */
