@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+  </head>
+  <body>
+    <div class="container__wrapper">
+      <!-- Header -->
+      <header class="header">
+        <div class="header__wrapper">
+          <!-- Navigation -->
+          <nav class="navbar">
+            <a href="../index.html"><span class="home">HOME</span></a>
+          </nav>
+        </div>
+      </header>
+      <!-- End of Header -->
+
+      <!-- Form section -->
+      <section class="contact-us">
+        <div class="contact-us__wrapper container">
+          <!-- Title -->
+          <div class="contact-us__title">
+            <h4 class="e-title">Contact Us</h4>
+          </div>
+          <div class="form__wrapper">
+            <!-- Form -->
+            <form action="#" method="get" class="c-form">
+              <label class="c-form__item">
+                <div class="c-form__item-title">Full name</div>
+                <input
+                  class="form-item"
+                  type="text"
+                  name="username"
+                  placeholder="Ram Kaji"
+                  size="45"
+                  required
+                />
+              </label>
+              <label class="c-form__item">
+                <div class="c-form__item-title">Your Email Address</div>
+                <input
+                  class="form-item"
+                  type="email"
+                  name="username"
+                  placeholder="hello@lastdoor.store"
+                  size="45"
+                  required
+                />
+              </label>
+              <label class="c-form__item">
+                <div class="c-form__item-title textarea-title">
+                  Your Message
+                </div>
+                <textarea
+                  type="text"
+                  placeholder="Type your message here..."
+                  class="form-item"
+                ></textarea>
+              </label>
+              <!-- Submit button -->
+              <button class="button" type="submit">Submit Your Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <p class="footer__text">Copyright &copy 2018 LastDoor.Store</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

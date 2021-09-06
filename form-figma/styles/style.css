@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "font name";
+  src: url("../fonts/AvenirNext-Regular.ttf") format("truetype"),
+    url("../fonts/AvenirNext-Medium.ttf") format("truetype"),
+    url("../fonts/AvenirNext-DemiBold.ttf") format("truetype"),
+    url("../fonts/AvenirNext-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+body {
+  font-family: "Avenir Next", sans-serif;
+  background-color: #11364e;
+}
+
+/* Header */
+.header {
+  background-color: #13253a;
+}
+
+.header__wrapper {
+  padding: 25px 35px;
+  margin-bottom: 45px;
+}
+
+/* Navigation */
+.navbar > a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar > a:hover {
+  color: #ff7f57;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.contact-us {
+  text-align: center;
+  height: 100vh;
+}
+
+/* Form */
+.c-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.c-form__item-title {
+  text-align: left;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+/* Form title */
+.contact-us__title {
+  margin-bottom: 55px;
+}
+
+.e-title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 50px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+/* Form inputs */
+.form-item {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.171);
+  background-color: transparent;
+  padding: 15px 0 10px 0;
+  margin-bottom: 40px;
+  color: #ff7f57;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding-left: 2px;
+}
+
+.c-form__item-title {
+  line-height: 17px;
+}
+
+.form-item::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.2;
+  color: #ffffff;
+}
+
+.form-item:focus {
+  color: white;
+}
+
+/* Textarea styling */
+textarea {
+  width: 405px;
+  height: 140px;
+  resize: none;
+  padding-left: 5px;
+}
+
+textarea[type="text"] {
+  padding-left: 2px;
+}
+
+textarea::placeholder,
+.textarea-title {
+  padding-left: 5px;
+}
+
+/* Submit button */
+.button {
+  cursor: pointer;
+  padding: 20px 115px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #ff7f57;
+  background-color: #ff7f57;
+  color: white;
+}
+
+.button:hover {
+  color: #2f281e;
+  background-color: #eb9282;
+  border: 1px solid #eb9282;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Footer */
+.footer {
+  background-color: #13253a;
+  text-align: center;
+}
+
+.footer__wrapper {
+  padding: 10px;
+}
+
+.footer__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.8;
+}

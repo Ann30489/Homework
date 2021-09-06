@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cahee Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+  </head>
+  <body>
+    <div class="container__wrapper">
+      <!-- Header -->
+      <header class="header">
+        <div class="header__wrapper">
+          <!-- Navigation -->
+          <nav class="navbar">
+            <a href="../index.html"><span class="home">HOME</span></a>
+          </nav>
+        </div>
+      </header>
+      <!-- End of Header -->
+
+      <!-- Contact section -->
+      <section class="contact">
+        <div class="contact__wrapper container">
+          <div class="contact__title__container">
+            <!-- Title -->
+            <h2 class="contact__title">Contact</h2>
+            <!-- Title description -->
+            <p class="contact__title-description">
+              For new projects, ideas, business or anything <br />you'd like to
+              discuss, contact with me!
+            </p>
+          </div>
+          <!-- Main part -->
+          <main class="main">
+            <div class="main__wrapper">
+              <div class="form__wrapper">
+                <!-- Contact Form -->
+                <form class="form" action="#" method="get">
+                  <input
+                    class="form-item"
+                    type="text"
+                    name="username"
+                    placeholder="Your name..."
+                    size="50"
+                    required
+                  />
+
+                  <input
+                    class="form-item"
+                    type="email"
+                    name="username"
+                    placeholder="Your email..."
+                    size="50"
+                    required
+                  />
+                  <input
+                    class="form-item"
+                    type="tel"
+                    name="phone"
+                    pattern="[+]{1}[0-9]{2}[(]{1}[0-9]{3}[)]{1}[0-9]{7}"
+                    placeholder="Your phone number..."
+                    size="50"
+                    required
+                  />
+                  <textarea
+                    class="form-item"
+                    type="text"
+                    placeholder="Your message..."
+                  ></textarea>
+                  <button class="button" type="submit">Submit</button>
+                </form>
+                <!-- End of Contact form -->
+              </div>
+
+              <!-- Company contact info -->
+              <div class="company-info">
+                <div class="company-info__address company-info__item">
+                  <span class="company-info__title address__title"
+                    >ADDRESS</span
+                  >
+                  <p class="company-info__info address__info">
+                    123 City name, Street, City, Country
+                  </p>
+                </div>
+                <div class="company-info__email company-info__item">
+                  <span class="company-info__title email__title">EMAIL</span>
+                  <p class="company-info__info email__info">cahee@domain.com</p>
+                </div>
+                <div class="company-info__phone company-info__item">
+                  <span class="company-info__title phone__title">PHONE</span>
+                  <p class="company-info__info phone__info">+012 345 6789</p>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </section>
+      <!-- End of Contact section -->
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <!-- Rights info -->
+          <div class="footer__rights">
+            <p class="footer__rights__text">
+              &copy 2015 Company. All right reserved.
+            </p>
+          </div>
+          <!-- Logo -->
+          <div class="footer__logo">
+            <span class="footer__logo__text">Cahee</span>
+          </div>
+          <!-- Info about author -->
+          <div class="footer__author">
+            <p class="footer__author__text">
+              Made with <span class="author__text--red">love</span> by Auskteez
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
