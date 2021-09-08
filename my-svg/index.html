@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My SVG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Zilla+Slab:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="header__wrapper">
+          <!-- Navigation -->
+          <nav class="navbar">
+            <a class="navbar__link" href="../index.html"
+              ><span class="navbar__link__item">Home</span></a
+            >
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__title-wrapper">
+          <h1 class="main__title">SVG Images</h1>
+        </div>
+
+        <div class="main__svg-container">
+          <!-- Credit card -->
+          <svg
+            viewbox="0 0 64 64"
+            class="svg-pic"
+            xmlns="http://www.w3.org/2000/svg"
+            id="credit-card"
+          >
+            <rect class="rect-credit" x="1" y="10" rx="5" ry="5" />
+            <line class="grey-line" x1="1.2" x2="62.9" y1="21" y2="21" />
+            <path
+              class="light-grey-lines"
+              d="M7.5,32 L18,32 M22 32 L32,32 M8,38 L9,38 M13,38 L15.5,38 M20,38 L21.5,38 M25,38 L28,38 M31,38 L31.2,38"
+            />
+            <circle class="red-circle" r="6.5" cx="43.5" cy="45.5" />
+            <circle class="blue-circle" r="6.5" cx="51" cy="45.5" />
+          </svg>
+
+          <!-- Crown -->
+          <svg
+            viewbox="0 0 64 64"
+            class="svg-pic"
+            id="crown"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polyline
+              points="14.8,48.5 2.8,18 21,33 32.8,8 43.8,33 61.2,18.8 50,48.5 13.5,48.4"
+            ></polyline>
+            <line
+              id="under-crown"
+              x1="14.8"
+              x2="50.8"
+              y1="54.5"
+              y2="54.5"
+            ></line>
+          </svg>
+          <!-- Face with eyes shut -->
+          <svg
+            viewbox="0 0 64 64"
+            class="svg-pic"
+            id="eyes-shut"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle id="face-shut" cx="32" cy="32" r="32" />
+            <line id="line-left" x1="12" x2="24" y1="23" y2="23" />
+            <line id="line-right" x1="40" x2="52" y1="23" y2="23" />
+            <line id="smile-shut" x1="17" x2="47" y1="45" y2="45" />
+          </svg>
+          <!-- Face with round eyes -->
+          <svg
+            viewbox="0 0 64 64"
+            class="svg-pic"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle id="face-round" cx="32" cy="32" r="32" />
+            <circle id="eye-left" class="eye" cx="19" cy="25" r="6" />
+            <circle id="eye-right" class="eye" cx="45" cy="25" r="6" />
+            <line id="smile" x1="15" x2="49" y1="45" y2="45" />
+            <animate
+              xlink:href="#smile"
+              attributename="y1"
+              from="45"
+              to="40"
+              dur="3s"
+              begin="0s"
+              fill="remove"
+            />
+            <animate
+              xlink:href="#eye-left"
+              attributename="r"
+              from="6"
+              to="10"
+              dur="3s"
+              begin="0s"
+              fill="remove"
+            />
+
+            <animate
+              xlink:href="#eye-right"
+              attributename="r"
+              from="6"
+              to="10"
+              dur="3s"
+              begin="0s"
+              fill="remove"
+            />
+          </svg>
+
+          <!-- Calc -->
+          <svg
+            viewbox="0 0 64 64"
+            class="svg-pic"
+            id="calc"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect class="rect-calc" x="10" y="5" rx="5" ry="5" />
+            <rect id="calc-screen" x="16" y="11" rx="3" ry="5" />
+            <path
+              class="calc-interface"
+              d="M18,32 L27,32 M22.5,28 L22.5,36.5 M36.5,32 L47,32 M19,46 L25.2,53 M25,45.8 L19,52.8 M38.5 53 L45.5 45 M38,45 L38 44.5 M46,52.5 L46.5,52.5"
+            />
+          </svg>
+
+          <!-- Key -->
+          <svg
+            class="svg-pic"
+            id="key"
+            viewbox="0 0 64 64"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="arcs"
+              d="M22 6.5 a9 8.5 0 0 0 1 14.5 M37.7 6.5 a9 8.5 0 0 1 1 14.5 M21.6,6.7 C24.7,6 28.5,5.2 38,6.4 M22.6,21.1 C22.6,21.1 28,22.5 39,20.8z"
+            />
+            <rect class="rect-key" x="29" y="22" />
+            <path
+              d="M31,22 V61 M31,59.5 H44.5 M31,58 H44.5 M31,52.5 H40.5 M31,51.2
+            H40.5 M31,45.5 H36.5 M31,44.5 H36.5"
+            />
+          </svg>
+
+          <!-- YouTube -->
+          <svg
+            viewbox="0 0 64 64"
+            class="svg-pic"
+            id="youtube"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect id="rect-youtube" x="3.5" y="10" rx="7" ry="12" />
+            <polygon
+              id="youtube-polygon"
+              points="25.5,22.5 44,32.5 25.5,42.5"
+            />
+          </svg>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer__info">
+          <p class="footer__info__copyright">
+            &copy Copyright, 2021. All rights reserved.
+          </p>
+          <p class="footer__info__text">Made by Anna Kharkova</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

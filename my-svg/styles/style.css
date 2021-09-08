@@ -1,0 +1,287 @@
+/* Animation */
+@keyframes changeColor {
+  10% {
+    fill: rgb(233, 209, 164);
+  }
+  25% {
+    fill: rgb(233, 164, 185);
+  }
+  50% {
+    fill: rgb(226, 88, 152);
+  }
+  75% {
+    fill: rgb(212, 48, 84);
+  }
+  80% {
+    fill: rgb(219, 61, 61);
+  }
+  100% {
+    fill: rgb(216, 198, 93);
+  }
+}
+
+@keyframes blink {
+  from {
+    stroke: black;
+  }
+  to {
+    stroke: transparent;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.header {
+  background-color: rgb(54, 51, 51);
+}
+
+.header__wrapper {
+  margin-bottom: 45px;
+}
+
+.navbar {
+  padding: 20px;
+}
+
+.navbar > a {
+  text-decoration: none;
+  color: white;
+  font-family: "Lobster", cursive;
+  font-size: 25px;
+}
+.main__title {
+  text-align: center;
+  font-family: "Zilla Slab", serif;
+  font-size: 50px;
+}
+
+.main__title-wrapper {
+  margin-bottom: 45px;
+}
+
+.main__svg-container {
+  margin: 0 280px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* =============================================================================================== */
+/* Svg styles */
+.svg-pic {
+  height: 200px;
+  width: 200px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+/* Credit card */
+.rect-credit {
+  width: 62px;
+  height: 45px;
+  fill: #f0c41b;
+}
+
+.rect-credit:hover {
+  fill: rgb(54, 54, 197);
+  transform: skew(25deg);
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.grey-line {
+  stroke: #806f5e;
+  stroke-width: 10;
+}
+
+.light-grey-lines {
+  stroke: #f9eab0;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.red-circle {
+  fill: #db2215;
+}
+
+.blue-circle {
+  fill: #245ea9;
+}
+
+/* Crown */
+#crown {
+  stroke-width: 3;
+  fill: none;
+  stroke: black;
+}
+
+#crown:hover {
+  animation: blink 0.5s infinite;
+  background-color: rgb(161, 24, 161);
+}
+#under-crown {
+  stroke-linecap: round;
+}
+
+/* Face with round eyes */
+#face-round {
+  fill: #fbd971;
+}
+
+#eye-left {
+  fill: #af8066;
+}
+
+#eye-right {
+  fill: #af8066;
+}
+
+#smile {
+  stroke-linecap: round;
+  stroke: #f0c419;
+  stroke-width: 4;
+}
+
+/* Face with eyes shut*/
+#face-shut {
+  fill: #fbd971;
+}
+
+#line-left,
+#line-right {
+  stroke: #f29c1f;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+#smile-shut {
+  stroke-linecap: round;
+  stroke: #f0c419;
+  stroke-width: 4;
+}
+
+#eyes-shut:hover > #line-left {
+  transform: translateY(-10px);
+}
+
+#eyes-shut:hover > #line-right {
+  transform: translateY(-10px);
+}
+
+#face-shut:hover {
+  animation: changeColor 5s infinite;
+}
+/* Calc */
+
+.rect-calc {
+  width: 45px;
+  height: 55px;
+}
+
+#calc:hover {
+  stroke-width: 1;
+  stroke: grey;
+  fill: pink;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#calc-screen {
+  width: 33px;
+  height: 10px;
+  fill: white;
+}
+
+.calc-interface {
+  stroke-linecap: round;
+  stroke: white;
+  stroke-width: 3;
+}
+
+#calc:hover > .calc-interface {
+  stroke-linecap: round;
+  stroke: rgb(141, 130, 130);
+  stroke-width: 1;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#calc:hover > #calc-screen {
+  fill: rgba(228, 16, 97, 0.788);
+}
+
+/* Key */
+#key {
+  stroke: black;
+  stroke-width: 3;
+  fill: white;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#key:hover {
+  stroke: #fccc0e;
+  transform: rotateY(75deg);
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rect-key {
+  width: 4px;
+  height: 3px;
+  fill: black;
+}
+
+/* YouTube */
+#youtube:hover > #rect-youtube {
+  fill: rgb(69, 214, 24);
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#youtube:hover > #youtube-polygon {
+  fill: black;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#rect-youtube {
+  width: 57px;
+  height: 44px;
+  fill: #d8362a;
+}
+
+#youtube-polygon {
+  fill: white;
+}
+
+/* Footer */
+.footer {
+  background-color: rgb(54, 51, 51);
+}
+
+.footer__info {
+  display: flex;
+  color: white;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.footer__info__copyright {
+  font-family: "Zilla Slab", serif;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.footer__info__text {
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+  text-align: right;
+  margin-right: 60px;
+}
