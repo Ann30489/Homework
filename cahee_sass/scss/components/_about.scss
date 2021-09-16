@@ -1,0 +1,27 @@
+// Info about company
+.c-about-company {
+	background-color: $c-turquoise;
+	height: 120vh;
+
+	&__section__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__block-info__wrapper {
+		margin-top: 130px;
+		padding: 0 65px;
+	}
+}
+
+// Title
+.e-about-company__title {
+	color: $c-white;
+	margin-bottom: 50px;
+}
+
+// Text
+.e-about-company__text {
+	color: $c-white;
+	margin-bottom: 10px;
+}

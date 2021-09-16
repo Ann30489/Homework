@@ -1,0 +1,19 @@
+.c-banner__wrapper {
+	max-width: 400px;
+	width: 100%;
+}
+
+.e-banner__title {
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
+	font-size: $fs-h1-main;
+	line-height: $lh-base;
+	margin-top: 190px;
+	margin-bottom: 35px;
+}
+
+.e-banner__text {
+	font-family: "Raleway", sans-serif;
+	font-weight: 100;
+	line-height: $lh-large;
+}

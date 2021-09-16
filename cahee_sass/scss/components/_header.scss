@@ -1,0 +1,20 @@
+.c-header {
+	background-color: transparent;
+	color: $c-black;
+	&__wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 0;
+	}
+}
+
+// Company logo
+.c-logo__wrapper {
+	padding: 50px 0;
+}
+
+.e-logo--cursive {
+	font-family: "Pacifico", cursive;
+	font-size: 50px;
+}
