@@ -1,0 +1,140 @@
+.c-blog {
+	background-color: $c-purple;
+
+	&__wrapper {
+		padding-bottom: 100px;
+	}
+	// Main title
+	&__title {
+		margin-top: 80px;
+		margin-bottom: 80px;
+
+		&__wrapper {
+			text-align: center;
+			max-width: 580px;
+			margin: 0 auto;
+			width: 100%;
+		}
+	}
+}
+
+.e-blog__title {
+	margin-bottom: 80px;
+}
+
+// Articles section
+.c-articles {
+	&__wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 80px;
+		@media (max-width: 1220px) {
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+
+	// Block item
+	&__block {
+		font-family: "Raleway", sans-serif;
+		color: $c-white;
+		max-width: 370px;
+		width: 100%;
+		box-shadow: $bs-base;
+		@media (max-width: 1220px) {
+			margin-bottom: 20px;
+		}
+
+		&__wrapper {
+			padding: 25px 10px 10px 20px;
+		}
+		&__date {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			width: fit-content;
+			text-align: center;
+			background-color: rgba(0, 0, 0, 0.26);
+			border-radius: 5px;
+			width: 58px;
+			height: 60px;
+			margin-bottom: 115px;
+			&--small {
+				font-weight: 700;
+				font-size: 32px;
+			}
+			&--large {
+				font-weight: 600;
+				font-size: 21px;
+			}
+		}
+
+		&__title {
+			font-weight: 700;
+			font-size: 20px;
+			margin-bottom: 25px;
+		}
+		&__author {
+			font-weight: 100;
+			font-size: 13px;
+		}
+	}
+}
+
+// Background images
+.c-articles__block--img1 {
+	background-image: url("./assets/pic1.png");
+	background-size: cover;
+	width: 100%;
+	@include media("<=phone") {
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}
+
+.c-articles__block--img2 {
+	background-image: url("./assets/pic2.png");
+	background-size: cover;
+	width: 100%;
+	@include media("<=phone") {
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}
+
+.c-articles__block--img3 {
+	background-image: url("./assets/pic3.png");
+	background-size: cover;
+	width: 100%;
+	@include media("<=phone") {
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}
+
+// Button
+.c-blog__button {
+	display: block;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	box-shadow: $bs-base;
+	padding: 15px 30px;
+	background-color: $c-red;
+	margin: 0 auto;
+
+	&:hover {
+		background-color: $c-orange;
+		transition: $t-normal;
+	}
+
+	&__name {
+		color: $c-white;
+		font-family: "Raleway";
+		font-size: 20px;
+		line-height: $lh-large;
+		text-transform: uppercase;
+	}
+}

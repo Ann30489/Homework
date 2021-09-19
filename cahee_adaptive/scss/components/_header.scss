@@ -1,0 +1,46 @@
+.c-header {
+	background-color: transparent;
+	color: $c-black;
+	&__wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 0;
+
+		@media (max-width: 768px) {
+			justify-content: space-between;
+		}
+
+		@media (max-width: 340px) {
+			justify-content: space-between;
+		}
+		@include media("<=phone") {
+			justify-content: flex-start;
+		}
+	}
+}
+
+// Company logo
+.c-logo__wrapper {
+	padding: 50px 0;
+
+	@include media("<=phone") {
+		padding: 20px 0;
+	}
+}
+
+.e-logo--cursive {
+	font-family: "Pacifico", cursive;
+	font-size: 50px;
+
+	@include media(">=large") {
+		font-size: 80px;
+	}
+
+	@include media(">screen", "<2080px") {
+		font-size: 90px;
+	}
+	@include media("<=880px") {
+		font-size: 40px;
+	}
+}

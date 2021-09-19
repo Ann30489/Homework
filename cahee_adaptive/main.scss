@@ -1,0 +1,124 @@
+@import "./scss/components/_media", "./variables";
+
+@font-face {
+    font-family: Raleway, sans-serif;
+    src: url(./fonts/Raleway-Bold.ttf) format(truetype), url(./fonts/Raleway-Heavy.ttf) format(truetype),
+        url(./fonts/Raleway-Light.ttf) format(truetype);
+    font-size: normal;
+    font-weight: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: $fs-base;
+    line-height: $lh-base;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+// Home page
+.c-home--img-bg {
+    background-image: url("./assets/img-main.jpg");
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+    
+    @include media("<=desktop", ">tablet") { 
+        padding: 0 80px;
+    }
+    
+    @media (max-width: 900px) {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: auto;
+        padding: 0 50px;
+    }
+    
+
+    @media (max-width: 720px) {
+        padding: 0 290px 0 60px;
+    }
+
+    @media (max-width: 630px) {
+        padding: 0 80px;
+    }
+
+    @media (max-width: 621px) {
+        background-image: none;
+    }
+
+    @include media("<=phone") {
+		padding: 0 30px;
+	}
+
+    @media (max-width: 376px) {
+        padding: 0 30px;
+    }
+
+    @media (max-width: 340px) {
+        padding: 0 10px;
+        margin: 0;
+    }
+    
+}
+
+.c-home__wrapper,
+.c-about-company__wrapper,
+.c-services__wrapper,
+.c-gallery__wrapper,
+.c-blog__wrapper,
+.c-contact__wrapper {
+    max-width: 1190px;
+    margin: 0 auto;
+    width: 100%;
+
+    @include media(">screen", ">=2080px") {
+        max-width: 2000px;
+    }
+
+    @include media(">screen", "<2080px")  {
+        max-width: 1800px;
+    }
+    @include media("<=1140px") {
+        max-width: 1035px;
+    }
+    @include media("<=880px") {
+        max-width: 750px;
+    }
+    @include media("<=tablet") {
+        max-width: 365px;
+    }
+}
+
+.e-about-company__title,
+.e-services__title,
+.e-gallery__title,
+.e-blog__title,
+.e-contact__title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: $fs-h1;
+    line-height: $lh-large;
+}
+
+.e-about-company__text,
+.e-gallery__text,
+.e-blog__text,
+.e-contact__text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 100;
+    line-height: $lh-large;
+}
+
+@import "./scss/elements/_index";
+@import "./scss/components/_index";
