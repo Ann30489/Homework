@@ -1,0 +1,98 @@
+.c-header {
+	position: relative;
+	width: 100%;
+	z-index: 80;
+	background-color: transparent;
+	color: $c-black;
+	&__wrapper {
+		position: relative;
+		z-index: 50;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 0;
+
+		@media (max-width: 768px) {
+			padding: 0 20px;
+		}
+	}
+}
+
+// Company logo
+.c-logo {
+	position: relative;
+	z-index: 50;
+	padding: 50px 0;
+	@include media("<=tablet") {
+		padding: 10px 0;
+	}
+}
+
+.e-logo--cursive {
+	position: relative;
+	z-index: 50;
+	font-family: "Pacifico", cursive;
+	font-size: 50px;
+
+	@include media(">=large") {
+		font-size: 80px;
+	}
+
+	@include media(">screen", "<2080px") {
+		font-size: 90px;
+	}
+	@include media("<=880px") {
+		font-size: 40px;
+	}
+}
+
+.c-header__toggle-menu {
+	display: none;
+	position: relative;
+	z-index: 50;
+	margin-top: 10px;
+
+	&:before,
+	&:after {
+		content: "";
+		background-color: black;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		transition: $t-normal;
+	}
+	&:before {
+		top: 0;
+	}
+	&:after {
+		bottom: 0;
+	}
+	& span {
+		position: absolute;
+		background-color: $c-black;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+		transition: $t-normal;
+	}
+	@include media("<=tablet") {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		z-index: 50;
+	}
+}
+.c-header__toggle-menu.active:before {
+	transform: rotate(45deg);
+	top: 9px;
+}
+.c-header__toggle-menu.active:after {
+	transform: rotate(-45deg);
+	bottom: 9px;
+}
+.c-header__toggle-menu.active span {
+	transform: scale(0);
+}

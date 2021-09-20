@@ -1,0 +1,25 @@
+mixin contact-title(args)
+	.c-contact__title
+		h1.e-contact__title Contact
+		p.e-contact__text For new projects, ideas, business or anything you'd like to discuss, contact with me!
+
+mixin submit-form(args)
+	form.c-contact__form(action='#' method='get')
+		input.c-contact__form__item(type='text' name='username' placeholder='Your name...' size='50' required='')
+		input.c-contact__form__item(type='email' name='username' placeholder='Your email...' size='50' required='')
+		input.c-contact__form__item(type='tel' name='phone' pattern='[+]{1}[0-9]{2}[(]{1}[0-9]{3}[)]{1}[0-9]{7}' placeholder='Your phone number...' size='50' required='')
+		textarea.c-contact__form__item(type='text' placeholder='Your message...')
+		button.c-contact__button(type='submit') Submit
+
+mixin contact-info(args)
+	.c-contact__info
+		.c-contact__info__wrapper
+			.c-contact__info__item
+				span.c-contact__info__title ADDRESS
+				p.c-contact__info__text 123 City name, Street, City, Country
+			.c-contact__info__item
+				span.c-contact__info__title EMAIL
+				p.c-contact__info__text cahee@domain.com
+			.c-contact__info__item
+				span.c-contact__info__title PHONE
+				p.c-contact__info__text +012 345 6789

@@ -1,0 +1,13 @@
+extends ./src/_extends/common
+
+block title
+	title Gallery
+
+block content
+	.c-gallery
+		.c-gallery__wrapper.c-main--collapse
+			+header()
+			+gallery__title()
+			+gallery__img-block()
+			+button-gallery()
+	+subscribe-block()

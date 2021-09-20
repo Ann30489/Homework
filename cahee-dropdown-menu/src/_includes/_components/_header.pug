@@ -1,0 +1,15 @@
+mixin header(args)
+	header.c-header
+		.c-header__wrapper
+			.c-logo
+				span.e-logo__name.e-logo--cursive Cahee
+			.c-dropdown-menu
+				button.c-menu__button MENU
+				.c-menu__content
+					a.c-menu__link(href="index.html") Home
+					a.c-menu__link(href="about.html") About
+					a.c-menu__link(href="services.html") Services
+					a.c-menu__link(href="gallery.html") Gallery
+					a.c-menu__link(href="blog.html") Blog
+					a.c-menu__link(href="contact.html") Contact
+			+navbar()

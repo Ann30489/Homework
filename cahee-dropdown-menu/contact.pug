@@ -1,0 +1,14 @@
+extends ./src/_extends/common
+
+block title
+	title Contact
+
+block content
+	.c-contact
+		.c-contact__wrapper
+			+header()
+			+contact-title()
+			.c-contact__main-container
+				+submit-form()
+				+contact-info()
+			+footer ()

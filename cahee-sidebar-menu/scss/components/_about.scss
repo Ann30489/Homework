@@ -1,0 +1,147 @@
+// Info about company
+.c-about-company {
+	background-color: $c-turquoise;
+
+	&__section__wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		@include media(">screen", ">=2080px") {
+			margin-top: 200px;
+		}
+
+		@include media(">screen", "<2080px") {
+			margin-top: 135px;
+		}
+
+		@include media("<=screen") {
+			margin-top: 100px;
+		}
+		@include media("<=1140px") {
+			margin-top: 50px;
+		}
+		@include media("<=880px") {
+			flex-direction: column-reverse;
+			align-items: center;
+			margin-top: 25px;
+			padding-bottom: 80px;
+		}
+	}
+	&__block-info__wrapper {
+		margin-top: 130px;
+		padding: 0 65px;
+
+		@include media(">screen", "<2080px") {
+			margin-top: 200px;
+			padding: 0 50px;
+			margin-left: 45px;
+		}
+		@include media(">screen", ">=2080px") {
+			padding-left: 125px;
+		}
+		@include media("<=screen") {
+			margin-left: 32px;
+		}
+		@include media("<=1140px") {
+			margin-top: 90px;
+		}
+		@include media("<=880px") {
+			margin-top: 0;
+		}
+		@include media("<=tablet") {
+			padding: 0;
+		}
+		@include media("<=350px") {
+			margin: 0 auto;
+		}
+	}
+}
+
+// Title
+.e-about-company__title {
+	color: $c-white;
+	margin-bottom: 50px;
+	@include media(">screen", ">=2080px") {
+		font-size: 130px;
+		margin-top: 95px;
+		margin-bottom: 90px;
+	}
+
+	@include media(">screen", "<2080px") {
+		margin-bottom: 75px;
+		font-size: 120px;
+	}
+
+	@include media(">screen", "<=1600px") {
+		line-height: 90px;
+		font-size: 110px;
+	}
+
+	@include media("<=1140px") {
+		font-size: 80px;
+		margin-bottom: 60px;
+	}
+	@include media("<=desktop") {
+		font-size: 45px;
+		line-height: 50px;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	@include media("<=350px") {
+		font-size: 38px;
+		margin-bottom: 20px;
+	}
+}
+
+// Text
+.e-about-company__text {
+	color: $c-white;
+	margin-bottom: 10px;
+	@include media(">screen", ">=2080px") {
+		font-size: 35px;
+		line-height: 50px;
+	}
+	@include media(">screen", "<2080px") {
+		font-size: 32px;
+		line-height: 45px;
+	}
+	@include media(">screen", "<=1600px") {
+		font-size: 24px;
+		line-height: 37px;
+	}
+	@include media("<=1140px") {
+		font-size: 14px;
+	}
+	@include media("<=350px") {
+		font-size: 10px;
+	}
+}
+
+.e-about-company__image {
+	@include media(">screen", ">=2080px") {
+		width: 800px;
+		height: 800px;
+	}
+
+	@include media(">screen", "<2080px") {
+		width: 900px;
+		height: 900px;
+	}
+	@include media("<=1500px") {
+		width: 560px;
+		height: 560px;
+	}
+	@include media("<=1140px") {
+		width: 450px;
+		height: 450px;
+	}
+	@include media("<=880px") {
+		width: 330px;
+		height: 330px;
+		margin-top: 20px;
+	}
+	@include media("<=tablet") {
+		width: 200px;
+		height: 200px;
+	}
+}

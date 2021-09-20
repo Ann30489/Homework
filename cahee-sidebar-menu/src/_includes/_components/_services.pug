@@ -1,0 +1,35 @@
+mixin type-block(args)
+	.c-services__type
+		.c-type__block
+			.c-type__block__container
+				p.e-type__block__text Online Shopping
+				//- SVG
+			.c-icon__container
+				svg.icon
+					use(xlink:href="#icon-cart")
+		.c-type__block
+			.c-type__block__container
+				p.e-type__block__text Quality Product
+				//- SVG
+			.c-icon__container
+				svg.icon
+					use(xlink:href="#icon-plant")
+		.c-type__block
+			.c-type__block__container
+				p.e-type__block__text Domestic & International#[br]Delivery
+				//- SVG
+			.c-icon__container
+				svg.icon
+					use(xlink:href="#icon-globe")
+		.c-type__block
+			.c-type__block__container
+				p.e-type__block__text Well Organized
+				//- SVG
+			.c-icon__container
+				svg.icon
+					use(xlink:href="#icon-carrot")
+
+mixin services__img-block(args)
+	.c-services__img-block
+		img.e-services__img(src="./assets/services-image.png" alt="Tomatoes")
+		h1.e-services__title Our Services

@@ -1,0 +1,64 @@
+// Banner button
+.e-banner__button {
+	&--orange {
+		cursor: pointer;
+		background-color: $c-orange;
+		border: none;
+		outline: none;
+		box-shadow: $bs-base;
+		padding: 15px 30px;
+		margin-top: 35px;
+
+		&:hover {
+			background-color: $c-orange-hov;
+			transition: $t-normal;
+		}
+
+		@include media("<=small") {
+			max-width: 300px;
+			margin: 0 auto;
+			width: 100%;
+			padding: 20px 0;
+			margin-top: 60px;
+		}
+	}
+}
+
+.e-banner__button__name {
+	&--white {
+		color: $c-white;
+		font-family: "Raleway";
+		font-size: 20px;
+		line-height: $lh-large;
+		text-transform: uppercase;
+
+		@include media("<=phone") {
+			font-size: 17px;
+		}
+	}
+}
+
+// Gallery button
+.c-gallery__button {
+	display: block;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	box-shadow: $bs-base;
+	padding: 15px 30px;
+	background-color: $c-blue;
+	margin: 0 auto;
+
+	&:hover {
+		background-color: $c-blue-dark;
+		transition: $t-normal;
+	}
+
+	&__name {
+		color: $c-white;
+		font-family: "Raleway";
+		font-size: 20px;
+		line-height: $lh-large;
+		text-transform: uppercase;
+	}
+}
