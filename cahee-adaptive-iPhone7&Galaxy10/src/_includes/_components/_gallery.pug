@@ -1,0 +1,39 @@
+mixin gallery__title(args)
+	.c-gallery__title
+		.c-gallery__title__wrapper
+			h1.e-gallery__title Gallery 
+			p.e-gallery__text Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+mixin gallery__img-block(args)
+	.c-gallery__img-container
+		.c-gallery__img-block1
+			.c-gallery__img-big__container
+				img.e-gallery__img-big(src="./assets/img-large.jpg" alt="peaches")
+			.c-gallery__aside-block__container
+				.c-gallery__aside-block
+						img.e-gallery__img-small(src="./assets/img-small1.jpg" alt="blueberry")
+				.c-gallery__aside-block
+						img.e-gallery__img-small(src="./assets/img-small2.jpg" alt="blackberry")
+		.c-gallery__img-block2__container
+			.c-gallery__img-middle__container
+				img.e-gallery__img-middle(src="./assets/img-middle1.jpg" alt="milk")
+			.c-gallery__img-middle__container
+				img.e-gallery__img-middle(src="./assets/img-middle2.jpg" alt="orange fruit")
+
+mixin subscribe-block(args)
+	.c-gallery__subscribe-block
+		.c-gallery__subscribe-block__wrapper
+			.c-gallery__subscribe-block__info
+				h2.c-gallery__subscribe-block__title Subscribe To Us
+				p.c-gallery__subscribe-block__text Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+			.c-gallery__subscribe-block__input-section
+				form.form(action="#" method="get")
+					input.c-gallery__subscribe-block__input(type="email"
+						name="username"
+						placeholder="Your email address..."
+						size="60"
+						required)
+					button.c-gallery__subscribe-block__button 
+						span.c-gallery__subscribe-block__button__name Subscribe
+
+

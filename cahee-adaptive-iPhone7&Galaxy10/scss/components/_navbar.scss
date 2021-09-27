@@ -1,0 +1,66 @@
+.c-navbar {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    transition: $t-normal;
+    overflow: auto;
+
+    @include media("<=tablet") {
+        position: fixed;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        top: -120%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $c-white;
+        z-index: 0;
+    }
+    
+}
+
+.c-navbar__link {
+    position: relative;
+    z-index: 0;
+    text-decoration: none;
+    color: $c-black;
+    font-family: "Raleway", sans-serif;
+    font-size: $fs-middle;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 5px;
+    margin-left: 20px;
+    &:hover {
+        color: $c-red;
+        transition: $t-normal;
+    }
+
+    @include media(">screen", ">=2080px") {
+        margin-left: 70px;
+        font-size: 32px;
+    }
+
+    @include media(">screen", "<2080px") {
+        margin-left: 60px;
+        font-size: 30px;
+    }
+    @include media("<=880px") {
+        font-size: 15px;
+    }
+    @include media("<=tablet") {
+        font-size: 20px;
+        position: relative;
+        z-index: 0;
+    }
+}
+// Style for an active page
+.link--active {
+    border-top: 3px solid $c-orange;
+}
+
+.c-navbar.active {
+    top: 0;
+}
