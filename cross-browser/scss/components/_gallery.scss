@@ -1,0 +1,259 @@
+.c-gallery {
+	background-color: $c-yellow;
+	@include media("<=tablet") {
+	}
+
+	&__wrapper {
+		padding-bottom: 100px;
+		@include media("<=tablet") {
+			margin: 0 auto;
+		}
+	}
+
+	// Main title
+	&__title {
+		margin-top: 80px;
+		margin-bottom: 50px;
+
+		&__wrapper {
+			text-align: center;
+			max-width: 580px;
+			margin: 0 auto;
+			width: 100%;
+		}
+	}
+
+	&__img-container {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 10px;
+		margin-bottom: 30px;
+	}
+}
+
+// Images
+.c-gallery__img-block1 {
+	max-width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin-bottom: 8px;
+	@include media("<=tablet") {
+		margin-bottom: 0;
+	}
+}
+
+.c-gallery__img-block2__container {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.c-gallery__img-big__container {
+	max-width: 65%;
+}
+.c-gallery__aside-block__container {
+	max-width: 33%;
+	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.c-gallery__aside-block {
+	width: 100%;
+}
+
+.e-gallery__title {
+	margin-bottom: 60px;
+	@include media("<=tablet") {
+		font-size: 50px;
+		margin-bottom: 30px;
+	}
+}
+
+.e-gallery__img-big {
+	width: 100%;
+	object-fit: contain;
+	object-position: bottom;
+}
+
+.e-gallery__img-small {
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+.c-gallery__img-middle__container {
+	width: 49%;
+}
+.e-gallery__img-middle {
+	width: 100%;
+	@media (max-width: 1220px) {
+		object-fit: cover;
+		object-position: center;
+	}
+}
+
+// Subscribe block
+.c-gallery__subscribe-block {
+	background-image: url("./assets/subscribe-bg.jpg");
+	background-size: cover;
+	width: 100%;
+	margin: 0 auto;
+	@media (max-width: 1170px) {
+		background-image: none;
+	}
+	@include media("<=tablet") {
+		max-width: 500px;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	&__wrapper {
+		padding: 100px 0 75px 65px;
+		@media (max-width: 1170px) {
+			padding: 15px 0;
+			text-align: center;
+		}
+		@include media("<=tablet") {
+			margin: 0 auto;
+		}
+	}
+
+	&__info {
+		width: 545px;
+		@media (max-width: 1170px) {
+			margin: 0 auto;
+		}
+		@include media("<=tablet") {
+			width: 100%;
+		}
+	}
+	&__title {
+		font-family: "Raleway", sans-serif;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: $lh-large;
+		margin-bottom: 25px;
+		@include media("<=tablet") {
+			font-size: 32px;
+		}
+	}
+	&__text {
+		font-family: "Raleway", sans-serif;
+		font-weight: 100;
+		line-height: $lh-large;
+		@media (max-width: 880px) {
+			margin-bottom: 20px;
+		}
+		@include media("<=tablet") {
+			font-size: 14px;
+			display: inline-block;
+			width: 200px;
+			margin: 0 auto;
+			margin-bottom: 15px;
+		}
+	}
+
+	&__input {
+		outline: none;
+		padding: 18px 0 18px 0;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		@include media("<=tablet") {
+			width: 230px;
+			height: 50px;
+			margin: 0;
+			margin-bottom: 20px;
+		}
+		&::placeholder {
+			font-family: "Raleway", sans-serif;
+			font-weight: 300;
+			font-size: 15px;
+			line-height: $lh-large;
+			padding-left: 5px;
+		}
+		&[type="email"] {
+			padding-left: 10px;
+		}
+	}
+
+	// Button
+	&__button {
+		cursor: pointer;
+		background-color: $c-green;
+		border: none;
+		outline: none;
+		box-shadow: $bs-base;
+		padding: 15px 30px;
+		margin-top: 35px;
+		@media (max-width: 880px) {
+			margin: 0;
+		}
+
+		&:hover {
+			background-color: $c-green-dark;
+			transition: $t-normal;
+		}
+
+		&__name {
+			color: $c-white;
+			font-family: "Raleway";
+			font-weight: 100;
+			font-size: 20px;
+			line-height: $lh-large;
+			text-transform: uppercase;
+		}
+	}
+}
+
+form {
+	@include media("<=tablet") {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+}
+
+.e-gallery__text {
+	@include media("<=tablet") {
+		font-size: 14px;
+	}
+}

@@ -1,0 +1,13 @@
+extends ./src/_extends/common
+
+block title
+	title About
+
+block content
+	.c-about-company
+		.c-about-company__wrapper
+			+header()
+			section.c-about-company__section
+				.c-about-company__section__wrapper
+					img.e-about-company__image(src="./assets/image-about.png" alt="Plate with raspberry")
+					+block-info()

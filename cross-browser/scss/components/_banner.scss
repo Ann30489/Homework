@@ -1,0 +1,46 @@
+.c-banner__wrapper {
+	max-width: 400px;
+	width: 100%;
+	padding-left: 25px;
+	padding-bottom: 150px;
+
+	@include media("<=tablet") {
+		margin-top: 380px;
+		padding-bottom: 35px;
+	}
+}
+
+.e-banner__title {
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
+	font-size: $fs-h1-main;
+	line-height: $lh-base;
+	margin-top: 190px;
+	margin-bottom: 35px;
+
+	@include media("<=tablet") {
+		font-size: 55px;
+		margin-top: 70px;
+		line-height: 55px;
+	}
+
+	@media (max-width: 376px) {
+		font-size: 40px;
+		margin-bottom: 20px;
+		margin-top: 40px;
+	}
+
+	@include media("<=small") {
+		text-align: center;
+	}
+}
+
+.e-banner__text {
+	font-family: "Raleway", sans-serif;
+	font-weight: 100;
+	line-height: $lh-large;
+
+	@media (max-width: 376px) {
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,58 @@
+// Footer
+.c-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    background-color: $c-black;
+    color: $c-grey;
+    &__wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        padding: 25px 0;
+        margin-right: 60px;
+        @include media("<=phone") {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            margin: 0 auto;
+            padding-bottom: 0;
+        }
+    }
+    &__copyright {
+        font-weight: 300;
+        font-size: $fs-middle;
+        @include media("<=phone") {
+            margin-bottom: 20px;
+        }
+    }
+    &__logo {
+        font-family: "Pacifico", cursive;
+        font-weight: normal;
+        font-size: 25px;
+        @include media("<=phone") {
+            margin-bottom: 20px;
+        }
+    }
+    &__author {
+        font-weight: 300;
+        font-size: 15px;
+        padding-left: 30px;
+        &--red {
+            font-weight: 700;
+            font-size: 15px;
+            color: #ff2b58;
+        }
+        @include media("<=phone") {
+            margin-bottom: 20px;
+        }
+    }
+}
