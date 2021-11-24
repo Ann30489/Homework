@@ -17,6 +17,7 @@
   </head>
   <body>
     <div class="my-container">
+      <!-- Header -->
       <header class="header">
         <div class="header__wrapper d-flex justify-content-between">
           <div class="container-fluid logo-container">
@@ -52,6 +53,7 @@
         </div>
       </header>
     </div>
+    <!-- Main title -->
     <h1 class="main-title">Welcome to our Book Store!</h1>
     <div class="card">
       <div class="card-header">Quote</div>
@@ -64,6 +66,8 @@
         </blockquote>
       </div>
     </div>
+
+    <!-- Slider -->
     <div class="slider-container">
       <div
         id="carouselExampleControls"
@@ -117,6 +121,7 @@
       </div>
     </div>
     <div class="order-container">
+      <!-- Order form -->
       <p class="order-title">Order a book</p>
       <form action="#" method="get" class="d-flex flex-column justify-center">
         <div class="mb-3">
@@ -146,11 +151,13 @@
         <button type="submit" class="btn btn-primary btn-submit">Order</button>
       </form>
     </div>
+
+    <!-- Technical support help -->
     <button type="button" class="btn btn-primary" id="liveToastBtn">
       Need help?
     </button>
 
-    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div class="position-fixed bottom-0 end-0 p-3 support-box" style="z-index: 11">
       <div
         id="liveToast"
         class="toast"
@@ -172,6 +179,11 @@
         <div class="toast-body">Hello! How can we help you?</div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="c-footer d-flex justify-content-center">
+      <p class="c-footer__text">&copy;All rights reserved, 2021</p>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
